@@ -1,3 +1,4 @@
+
 const express = require('express');
 const app = express();
 const port = 5005;
@@ -84,7 +85,7 @@ const HTML_TEMPLATE = `
                 const endTime = Date.now();
                 const duration = ((endTime - startTime) / 1000).toFixed(2); // in seconds
 
-                resultDiv.innerHTML = \`<strong>Server responded:</strong> `; // Added frontend measured duration
+                resultDiv.innerHTML = \`<strong>Server responded:</strong> \`;
 
             } catch (error) {
                 resultDiv.textContent = \`Error: \${error.message}\`;
